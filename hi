@@ -27,7 +27,7 @@ for i,v in next, game:GetService('Players'):GetPlayers() do
 if v.Name ~= game:GetService('Players').LocalPlayer.Name then
 pcall(function()
 v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
-v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.Transparency = 0.4
 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Bright red")
 v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
@@ -48,7 +48,7 @@ for i,v in next, game:GetService('Players'):GetPlayers() do
 if v.Name ~= game:GetService('Players').LocalPlayer.Name then
 pcall(function()
 v.Character.HumanoidRootPart.Size = Vector3.new(2, 2, 1)
-v.Character.HumanoidRootPart.Transparency = 0.5
+v.Character.HumanoidRootPart.Transparency = 1
 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Medium stone grey")
 v.Character.HumanoidRootPart.Material = "Plastic"
 v.Character.HumanoidRootPart.CanCollide = false
