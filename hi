@@ -1,4 +1,4 @@
-game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Made By jmx418", Text = "w = Enabled : p = disabled."})
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Made By jmx418 (wip)", Text = "wasd = Enabled : p = disabled."})
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
 
@@ -7,6 +7,9 @@ local mouse = player:GetMouse()
 bind = ""
 bind2 = "w"
 bind3 = "p"
+bind4 = "a"
+bind5 = "s"
+bind6 = "d"
 
 -- Script
 
@@ -53,6 +56,72 @@ v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Medium stone grey")
 v.Character.HumanoidRootPart.Material = "Plastic"
 v.Character.HumanoidRootPart.CanCollide = false
 end)
+end
+end
+end
+end)
+
+mouse.KeyDown:connect(function(key4)
+if key4 == bind4 then
+_G.HeadSize = 17
+_G.Disabled = true
+
+
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.9
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Bright white")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end
+end)
+
+mouse.KeyDown:connect(function(key5)
+if key5 == bind5 then
+_G.HeadSize = 17
+_G.Disabled = true
+
+
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.9
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Bright white")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end
+end)
+
+mouse.KeyDown:connect(function(key6)
+if key6 == bind6 then
+_G.HeadSize = 17
+_G.Disabled = true
+
+
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.9
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Bright white")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
 end
 end
 end
